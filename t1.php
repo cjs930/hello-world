@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-$c = oci_connect("ntpsm", "ntpsm", "192.168.0.25/XE");
+$c = oci_connect("ntpsm", "ntpsm", "localhost/XE");
 if (!$c) {
     $m = oci_error();
     trigger_error('Could not connect to database: '. $m['message'], E_USER_ERROR);
