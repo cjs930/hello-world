@@ -19,7 +19,7 @@ while (($row = oci_fetch_array($s, OCI_ASSOC+OCI_RETURN_NULLS)) != false) {
         echo $item!==null?htmlspecialchars($item, ENT_QUOTES|ENT_SUBSTITUTE):"&nbsp;";
         echo "</td>\n";
     }
-    echo "</tr>\n";
+    echo "<tr></tr>\n";
 }
 echo "</table>\n";
 
